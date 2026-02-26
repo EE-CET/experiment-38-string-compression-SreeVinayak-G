@@ -1,0 +1,44 @@
+{
+  "tests": [
+    {
+      "name": "Example 1",
+      "setup": "javac src/StringCompression.java",
+      "run": "java -cp src StringCompression",
+      "input": "aabcccccaaa",
+      "output": "a2b1c5a3",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 25
+    },
+    {
+      "name": "No Compression Benefit (abc)",
+      "setup": "javac src/StringCompression.java",
+      "run": "java -cp src StringCompression",
+      "input": "abc",
+      "output": "abc",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 25
+    },
+    {
+      "name": "Equal Length (aabb -> a2b2)",
+      "setup": "javac src/StringCompression.java",
+      "run": "java -cp src StringCompression",
+      "input": "aabb",
+      "output": "a2b2",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 25
+    },
+    {
+      "name": "Single Character",
+      "setup": "javac src/StringCompression.java",
+      "run": "java -cp src StringCompression",
+      "input": "a",
+      "output": "a",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 25
+    }
+  ]
+}
