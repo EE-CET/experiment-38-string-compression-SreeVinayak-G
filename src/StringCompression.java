@@ -21,7 +21,7 @@ public class StringCompression {
                 String s = sc.nextLine();
                 int n = s.length();
                 String res = compress(s,n);
-                if(res.length()>=n){
+                if(res.length()>n){
                         System.out.println(s);
                 }else{
                         System.out.println(res);
